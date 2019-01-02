@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /events
     destination: /var/www/html/events
+  - source: /chinese
+    destination: /var/www/html/chinese
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
