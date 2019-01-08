@@ -1,12 +1,12 @@
 version: 0.0
 os: linux
 files:
-  - source: /eventsbyatc
-    destination: /var/www/html/eventsbyatc
+  - source: /events
+    destination: /var/www/html/events
   - source: /chinese
     destination: /var/www/html/chinese
-  - source: /rosehillbowlingclub
-    destination: /var/www/html/rosehillbowlingclub
+  - source: /rbc
+    destination: /var/www/html/rbc
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
